@@ -4,11 +4,11 @@ async function generatePoem(event) {
 
   const instructionsInput = document.querySelector(".instructions");
   const prompt = instructionsInput.value;
-  const context = "You are a French poet. Write a short poem in French about the following topic";
+  const context = "You are a nice Alien in love with a citizent of Planet Earth. Write a short love letter to your fellow favorite human ";
   const apiKey = "oafbe8035b88726c0e80be71t4409330";
   const poemDiv = document.querySelector(".poem");
 
-  poemDiv.innerHTML = "✿ Generating your poem... ✿";
+  poemDiv.innerHTML = "✿ Generating a love letter... ✿";
 
   try {
     const apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${encodeURIComponent(prompt)}&context=${encodeURIComponent(context)}&key=${apiKey}`;
@@ -25,7 +25,7 @@ async function generatePoem(event) {
         .typeString(data.answer)
         .start();
     } else {
-      poemDiv.innerHTML = "Sorry, could not generate a poem. Please try again.";
+      poemDiv.innerHTML = "Sorry, could not generate a love letter. Please try again.";
     }
   } catch (error) {
     console.error("Error:", error);

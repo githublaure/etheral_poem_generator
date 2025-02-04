@@ -1,10 +1,28 @@
-body {
-  background: #ffcbcb;
+
+/*
+.first-color { 
+	background: #08d9d6; 
+}
+	
+.second-color { 
+	background: #252a34; 
+}
+
+.third-color { 
+	background: #ff2e63; 
+}
+
+.fourth-color { 
+	background: #eaeaea; 
+  */
+
+  body {
+  background: #08d9d6;
   text-align: center;
 }
 
 a {
-  color: #ffb5b5;
+  color: #ff2e63;
 }
 
 @keyframes fallingSakura {
@@ -20,10 +38,10 @@ a {
     opacity: 0;
   }
 }
-
+/* to be replaced by falling hearts */
 .sakura {
   position: fixed;
-  color: #ffb5b5;
+  color:  #252a34;
   font-size: 20px;
   pointer-events: none;
   z-index: 1;
@@ -45,7 +63,7 @@ h1 {
   font-weight: 800;
   font-size: 36px;
   line-height: 1.5;
-  color: #407088;
+  color: #ff2e63;
 }
 
 form {
@@ -65,7 +83,7 @@ form {
   font-size: 16px;
   border-radius: 50px;
   line-height: 20px;
-  color: #407088;
+  color: #ff2e63;
 }
 
 .container {
@@ -75,10 +93,10 @@ form {
 
 .submit-button {
   margin-left: 10px;
-  background: #ffb5b5;
-  color: white;
+  background: #ff2e63;
+  color: #eaeaea;
   border: none;
-  width: 150px;
+  width: 100%;
   font-size: 16px;
   border-radius: 50px;
   padding: 14px 24px;
